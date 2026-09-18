@@ -1,0 +1,10 @@
+{
+  "name": "SoolynLauncher",
+  "microsoftClientId": "7f49874f-a610-4252-95cf-5cd1ad3af1c7",
+  "redirectUri": "https://login.microsoftonline.com/common/oauth2/nativeclient",
+  "repository": "https://github.com/soolyn/minecraftServer",
+  "updateManifestUrl": "https://github.com/soolyn/minecraftServer/releases/latest/download/manifest.json",
+  "serverAddress": "39.118.205.165:10000",
+  "minecraftVersion": "26.2",
+  "fabricVersion": "0.19.5"
+}
