@@ -1,0 +1,13 @@
+diff --git a/dist/index.js b/dist/index.js
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -3025,3 +3025,3 @@
+ var import_core2 = require("@xmcl/core");
+-var import_utils2 = require("@xmcl/core/utils");
++var import_utils2 = { isNotNull: (value) => value !== undefined && value !== null };
+ var import_promises3 = require("fs/promises");
+@@ -3532,3 +3532,3 @@
+ // libraries.ts
+-var import_utils7 = require("@xmcl/core/utils");
++var import_utils7 = { isNotNull: (value) => value !== undefined && value !== null };
+ var import_unzip = require("@xmcl/unzip");
