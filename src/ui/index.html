@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>SoolynLauncher</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside class="rail"><div class="monogram">S<span>✦</span></div><div class="rail-label">SOOLYN</div><div class="rail-bottom">01</div></aside>
+<main>
+  <header><div class="wordmark">SOOLYN<span>LAUNCHER</span></div><div class="account"><span class="avatar">S</span><span id="account">로그인되지 않음</span><button class="text-button" id="login">로그인</button><button class="text-button hidden" id="logout">로그아웃</button></div></header>
+  <section class="hero">
+    <div class="world" aria-hidden="true">
+      <svg viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#354e48"/><stop offset="1" stop-color="#718478"/></linearGradient><linearGradient id="fog" x2="0" y2="1"><stop stop-color="#10271c" stop-opacity="0"/><stop offset="1" stop-color="#10271c"/></linearGradient></defs><path fill="url(#sky)" d="M0 0h1000v500H0z"/><path fill="#b8c69c" opacity=".65" d="M760 60h45v45h-45z"/><path fill="#819887" opacity=".55" d="M0 190h65v-20h80v-30h70v45h60v45h80v-25h50v-70h90v-45h60v-40h65v65h40v35h60v70h65v-40h40v-40h60v-50h50v35h55v100h-950z"/><path fill="#476a54" d="M0 290h70v-60h60v-40h45v-30h40v80h50v35h65v-45h50v-45h45v-30h70v-50h65v50h50v100h65v25h80v-35h40v-40h35v-65h50v35h50v65h70v-40h70v260H0z"/><path fill="#284a35" d="M0 360h80v-55h75v-30h90v30h70v30h85v-45h70v-50h100v40h55v55h90v-15h50v-30h100v35h75v-20h60v195H0z"/><g fill="#173b2a"><path d="M720 345h17v-95h-17zM683 282h89v-24h-15v-24h-15v-24h-27v24h-16v24h-16zM875 380h16V255h-16zM840 303h89v-27h-17v-28h-17v-31h-25v31h-16v28h-14zM950 355h14v-75h-14zM925 302h66v-24h-13v-20h-30v20h-23z"/></g><g fill="#142f22"><path d="M540 448h15V310h-15zM506 358h85v-24h-14v-30h-15v-30h-27v30h-15v30h-14zM620 442h19V325h-19zM584 375h95v-26h-15v-31h-20v-30h-29v30h-17v31h-14z"/></g><path fill="#a4a277" opacity=".45" d="M808 360h32v20h-42v20h-48v25h-70v25h-120v50H390v-20h100v-25h90v-28h80v-27h74v-20h74z"/><path fill="url(#fog)" d="M0 0h1000v500H0z"/></svg>
+    </div>
+    <div class="hero-top"><span class="pill"><i></i> SOOLYN WORLD</span><span class="edition">JAVA EDITION</span></div>
+    <div class="hero-copy"><p class="eyebrow">YOUR NEXT CHAPTER</p><h1>다시, 우리의 세계로.</h1><p class="subtitle">함께 가꾸고, 발견하고, 모험하는 곳.</p></div>
+    <div class="hero-bottom"><span class="server-dot"></span><span id="server">서버 확인 중</span><span class="divider"></span><span id="address">39.118.205.165:10000</span><span class="version">MINECRAFT 26.2 · FABRIC</span></div>
+  </section>
+  <section class="launch-panel">
+    <div class="status"><div class="status-title"><span id="phase">플레이할 준비</span><span id="percent"></span></div><p id="detail">본섭 전용 클라이언트</p><div class="track"><div id="bar"></div></div></div>
+    <button id="play" class="play">플레이 <span>↗</span></button>
+  </section>
+  <div id="message" role="status" aria-live="polite"></div>
+  <footer><div class="tools"><button id="install">설치 / 파일 검사</button><span>·</span><button id="folder">게임 폴더</button><span>·</span><button id="releases">업데이트</button></div><label class="memory">메모리 <select id="memory" aria-label="게임 메모리"></select></label><span class="build">v0.1.0</span></footer>
+</main><script src="renderer.js"></script></body></html>
