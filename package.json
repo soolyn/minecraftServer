@@ -1,0 +1,50 @@
+{
+  "name": "soolyn-launcher",
+  "productName": "SoolynLauncher",
+  "version": "0.1.0",
+  "description": "Soolyn production Minecraft launcher",
+  "author": "Soolyn",
+  "private": true,
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "build": {
+    "appId": "kr.soolyn.launcher",
+    "productName": "SoolynLauncher",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/**/*",
+      "config/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "bundled",
+        "to": "bundled"
+      }
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "artifactName": "SoolynLauncher-${version}-${arch}.${ext}"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  },
+  "dependencies": {
+    "@xmcl/core": "2.16.2",
+    "@xmcl/installer": "6.3.4"
+  },
+  "devDependencies": {
+    "electron": "44.4.1",
+    "electron-builder": "26.15.3"
+  }
+}
