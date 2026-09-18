@@ -3,9 +3,13 @@ release/
 .env
 .env.*
 *.pem
+!config/update-public.pem
 *.key
 *.pfx
 *.log
 tokens*
 accounts*
 bundled/
+qa-instance/
+qa-ui*/
+release-assets/

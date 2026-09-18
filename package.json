@@ -9,6 +9,7 @@
   "scripts": {
     "start": "electron .",
     "test": "node --test test/*.test.cjs",
+    "bundle": "node tools/fetch-bundle.cjs",
     "dist": "electron-builder --win portable --x64"
   },
   "build": {
@@ -20,7 +21,8 @@
     "files": [
       "src/**/*",
       "config/**/*",
-      "package.json"
+      "package.json",
+      "THIRD_PARTY_NOTICES.md"
     ],
     "extraResources": [
       {
@@ -33,11 +35,6 @@
       "signAndEditExecutable": false
     },
     "artifactName": "SoolynLauncher-${version}-${arch}.${ext}"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "electron"
-    ]
   },
   "dependencies": {
     "@xmcl/core": "2.16.2",
